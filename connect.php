@@ -1,7 +1,7 @@
 <?php
-
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+date_default_timezone_set("Europe/Zurich");
+mysql_connect('localhost',
+        'projet',
+        'MXCwUzTumrBxwPTx');
+mysql_query("SET NAME 'utf8'");
 ?>
