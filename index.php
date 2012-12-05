@@ -6,9 +6,9 @@
     <body>
         <form name="form">
         <h1>Connexion</h1>
-        Nom d'utilisateur: <input type="text" value="" name="user"/>
+        Nom d&apos;utilisateur: <input type="text" value="" name="user"/>
         Mots de passe : <input type="passwd" value="" name="passwd" />
         </form>
-        pas encore inscrit ? :<a href="register.php"> s'enregistrer</a>
+        pas encore inscrit? :<a href="register.php"> s&apos;enregistrer</a>
     </body>
 </html>
