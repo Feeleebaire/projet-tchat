@@ -1,11 +1,106 @@
 html{
-    position: absolute;
-    width: 695px;
-    height: 590px;
+    margin-left: 15%;
+    margin-top: 3%;
+    /*position: absolute;*/
+    width: 70%;
+    height: 87%;
+    min-width: 800px;
+    min-height: 600px;
     border:1px solid grey;
     border-radius: 5px;
-    background-color: whitesmoke;
+    background-color: white;
+    /*box-shadow:4px 4px 10px #000000;*/
+    box-shadow: 4px 4px 10px rgb(0, 0, 0);
     -moz-box-shadow: 4px 4px 10px black;
     -webkit-box-shadow: 4px 4px 10px black;
-    box-shadow: 4px 4px 10px black;
+    /*-o-box-shadow: 4px 4px 10px black;*/
+    font-family: arial,helvetica,sans-serif;
+    
+}
+body{
+        
+        background-color: whitesmoke;
+        width: 70%;
+        height: 87%;
+        min-width: 800px;
+        min-height: 600px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: absolute;
+        border-radius: 5px;
+}
+#user{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+
+}
+#email{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+#resultat{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+#resultatemail{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+#passwd{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+#confpasswd{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#imge{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+#imgu{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+#imgcp{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+#imgp{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+#info2{
+    margin-left: 17px;
+}
+#info{
+    margin-left: 17px;
+}
+#mdpinfo{
+    margin-left: 17px;
+}
+#mdperror{
+    margin-left: 17px;
+}
+#submit{
+    
 }

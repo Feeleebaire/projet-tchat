@@ -4,11 +4,14 @@
         <link rel="stylesheet" href="css/style.css" type="text/css" />
     </head>
     <body>
-        <form name="form">
+        <form name="form" method="POST" action="connect.php">
         <h1>Connexion</h1>
-        Nom d&apos;utilisateur: <input type="text" value="" name="user"/><br />
-        Mots de passe : <input type="passwd" value="" name="passwd" />
+        Nom d&apos;utilisateur : <br />
+        <input type="text" value="" name="login"/><br />
+        Mots de passe : <br />
+        <input type="password" value="" name="passwd" /><br />
+        <input type="submit" value="connection" />
         </form>
-        pas encore inscrit? :<a href="register.php"> s&apos;enregistrer</a>
+        pas encore inscrit? : <a href="register.php"> s&apos;enregistrer</a>
     </body>
-</html>
+</html> 
