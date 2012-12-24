@@ -14,8 +14,18 @@
     </head>
     <body>
         Pseudo actuelle: <?php echo $user?><br />
-        entr&eacute;e un nouveau pseudo: <br />
-        <input type="text" />
+        entrer un nouveau pseudo: <br />
+        <input type="text" name="user" id="user" /><label id="imgu"></label><label id="info"></label>
+        <div id="resultat"></div>
+        votre e-mail actuelle: <?php ?><br />
+        entrer un nouvelle e-mail:<br />
+        <input type="text" value="" name="email" id="email" /><label id="imge"></label><label id="info2"></label>
+        <div id="resultatemail"></div>
+        
+        mot de passe:<br />
+        <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
+        confimer le mots de passe:<br />
+        <input type="password" value="" name="confpasswd" id="confpasswd"/><label id="imgcp"></label><label id="mdperror"></label><br />
 
       <?php }
     else{
