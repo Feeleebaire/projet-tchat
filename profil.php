@@ -10,7 +10,8 @@
 <html>
     <head>
         <title>Votres profil <?php print $_SESSION['user'];?></title>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" media="screen" href="css/style.css" type="text/css" />
+        
     </head>
     <body>
         Pseudo actuelle: <?php echo $user?><br />
@@ -22,6 +23,9 @@
         <input type="text" value="" name="email" id="email" /><label id="imge"></label><label id="info2"></label>
         <div id="resultatemail"></div>
         
+        <div id="image">
+            
+        </div>
         mot de passe:<br />
         <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
         confimer le mots de passe:<br />

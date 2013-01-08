@@ -1,8 +1,7 @@
 <html>
     <head>
         <title>Page de connexion</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-    </head>
+        <link rel="stylesheet" media="screen" href="css/style.css" type="text/css" />
     <body>
         <form name="form" method="POST" action="connect.php">
         <h1>Connexion</h1>
