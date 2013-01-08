@@ -45,7 +45,7 @@
             if($exist_dossier == "yes"){
                 while ($entry = $du->read()){ 
                     if( $entry != '.' && $entry != '..' && preg_match('#\.(jpe?g|gif|png)$#i', $entry)) {
-                        echo "<img src=".$du->path.'/'.$entry." /><br />\n";
+                        echo "<img src=".$du->path.'/'.$entry." /><br /><input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." /> <br />\n";
                     }
                 }
             }
