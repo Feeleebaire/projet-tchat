@@ -6,8 +6,10 @@
         $sql = "SELECT user, email FROM users WHERE user ='$user'" ;
         //repertoire ou l'image serra enregistrer
         $dossier = "images/";
+        $dossier_user = "images/".$user;
         //ici je fais comprandre que c'est un repertoire pour la boucle while
         $d = dir($dossier);
+        $du = dir($dossier_user);
         //je regarde dans le dossier images
         while($entry = $d->read()) {
             //si il existe un dossier ayant le meme nom que le pseudo
@@ -39,12 +41,13 @@
         <div id="resultatemail"></div>
         Vos images:<br />
         <div id="image">
-            <?php 
+            <?php
             if($exist_dossier == "yes"){
-                echo "coucou<br />\n";
-                //while ($entry = $d->read()){  
-                  //  print '<img src="'.$d.'/'.$user.'/*">';
-                //}
+                while ($entry = $du->read()){ 
+                    if( $entry != '.' && $entry != '..' && preg_match('#\.(jpe?g|gif|png)$#i', $entry)) {
+                        echo "<img src=".$du->path.'/'.$entry." /><br />\n";
+                    }
+                }
             }
             else{
                 echo "Vous n'avez pas encore d'images <br />\n";
