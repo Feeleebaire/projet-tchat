@@ -8,24 +8,24 @@ $add="INSERT INTO users (`id`,`user`,`email`,`passwd`) VALUES (NULL,'$user','$em
 $dimage = "css/images/user_picture/";
 $duser = "images/".$user;
 $dossier = "images/";
-//je crée un fonction pour la copie du dossier images
+//créeation  d'une fonction pour la copie du dossier user_picture
 function copyfolder($source, $destination)
 {
 
-       //Open the specified directory
+       //Ouverture du dossier source
 
        $directory = opendir($source);
 
-       //Create the copy folder location
+       //Création du dossier de destination
 
        mkdir($destination);
 
-       //Scan through the folder one file at a time
+       //Scan du dossier pour lister les fichiers
 
        while(($file = readdir($directory)) != false)
        {
 
-              //Copy each individual file
+              //Copie de chaque fichier individuelement
 
               copy($source.'/' .$file, $destination.'/'.$file);
 
