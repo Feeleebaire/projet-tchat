@@ -45,15 +45,14 @@ $f = fopen($dossier.$user."/"."index.html",'w');
 fwrite($f, $txt);
 //et je le referme
 fclose($f);
-//copy($dimage, $duser);
-//exec("cp $dimage $duser");
-//mysql_query($add) or die(mysql_errno());
-/*if(true){
+
+mysql_query($add) or die(mysql_errno());
+if(true){
     session_start();
     $_SESSION['user']=$user;
     header('location: session.php');
 }
 else{
     print(mysql_errno());
-}*/
+}
 ?>
