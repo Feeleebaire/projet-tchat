@@ -29,7 +29,7 @@
     <head>
         <title>Votres profil <?php print $user;?></title>
         <link rel="stylesheet" media="screen" href="css/style.css" type="text/css" />
-        <script src="js/" type="text/javascript"></script>
+        <script src="js/profil.js" type="text/javascript"></script>
     </head>
     <body>
         <form method="POST" action="profil-update.php" name="form" id="form" onsubmit="return testForm(form)">
@@ -50,11 +50,9 @@
                     if( $entry != '.' && $entry != '..' && preg_match('#\.(jpe?g|gif|png|bmp)$#i', $entry)) {
                         
                         echo "<img id=\"img\" src=".$du->path.'/'.$entry." />";
-                        echo "<input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." />";
-                        
+                        echo "<input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." />"; 
                     }
                 }
-                    
             }
             
             else{
