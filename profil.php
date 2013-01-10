@@ -41,18 +41,27 @@
         <div id="resultatemail"></div>
         Vos images:<br />
         <div id="image">
+
             <?php
             if($exist_dossier == "yes"){
                 while ($entry = $du->read()){ 
                     if( $entry != '.' && $entry != '..' && preg_match('#\.(jpe?g|gif|png|bmp)$#i', $entry)) {
-                        echo "<img src=".$du->path.'/'.$entry." /><br /><input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." /> <br />\n";
+                        
+                        echo "<img id=\"img\" src=".$du->path.'/'.$entry." />";
+                        echo "<input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." />";
+                        
                     }
                 }
+                    
             }
+            
             else{
                 echo "Vous n'avez pas encore d'images <br />\n";
             }
+            $du->close();
+        
             ?>
+
         </div>
         mot de passe:<br />
         <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
