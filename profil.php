@@ -29,8 +29,10 @@
     <head>
         <title>Votres profil <?php print $user;?></title>
         <link rel="stylesheet" media="screen" href="css/style.css" type="text/css" />
+        <script src="js/" type="text/javascript"></script>
     </head>
     <body>
+        <form method="POST" action="profil-update.php" name="form" id="form" onsubmit="return testForm(form)">
         Pseudo actuelle: <?php echo $user?><br />
         entrer un nouveau pseudo: <br />
         <input type="text" name="user" id="user" /><label id="imgu"></label><label id="info"></label>
@@ -67,7 +69,10 @@
         <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
         confimer le mots de passe:<br />
         <input type="password" value="" name="confpasswd" id="confpasswd"/><label id="imgcp"></label><label id="mdperror"></label><br />
-
+        <input type="submit" value="modiffier" />
+        </form>
+        <script type="text/javascript" src="js/JQuery.js"></script>
+        <script type="text/javascript" src="js/live_profil.js"></script>
       <?php }
     else{
      header('location: index.php');
