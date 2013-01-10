@@ -14,6 +14,7 @@ $r=  mysql_fetch_array($res);
 if($r['passwd']==  sha1($password) && $r['user']==$user){
     session_start();
     $_SESSION['user']=$user;
+    $_SESSION['pictures']=$r['pictures'];
     header('location: session.php');
 }
  else {
