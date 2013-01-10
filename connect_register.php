@@ -4,7 +4,7 @@ $user = $_POST['user'];
 $email = $_POST['email'];
 $passwd = $_POST['passwd'];
 $passhash = sha1($passwd);
-$add="INSERT INTO users (`id`,`user`,`email`,`passwd`) VALUES (NULL,'$user','$email','$passhash')";
+$numimg = rand (1, 16);
 $dossier = "images/";
 $dimage = "css/images/user_picture/";
 $duser = "images/".$user;
@@ -45,7 +45,7 @@ $f = fopen($dossier.$user."/"."index.html",'w');
 fwrite($f, $txt);
 //et je le referme
 fclose($f);
-
+$add="INSERT INTO users (`id`,`user`,`email`,`passwd`,`pictures`) VALUES (NULL,'$user','$email','$passhash','$duser/$numimg.png')";
 mysql_query($add) or die(mysql_errno());
 if(true){
     session_start();
