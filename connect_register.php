@@ -5,9 +5,9 @@ $email = $_POST['email'];
 $passwd = $_POST['passwd'];
 $passhash = sha1($passwd);
 $add="INSERT INTO users (`id`,`user`,`email`,`passwd`) VALUES (NULL,'$user','$email','$passhash')";
+$dossier = "images/";
 $dimage = "css/images/user_picture/";
 $duser = "images/".$user;
-$dossier = "images/";
 //créeation  d'une fonction pour la copie du dossier user_picture
 function copyfolder($source, $destination)
 {
