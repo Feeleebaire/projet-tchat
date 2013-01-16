@@ -104,97 +104,138 @@
     }
 }
 /*------------------------------------------------------------------------------*/
-    #user{
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 5px;
+#menu {
+    border-bottom: 1px solid;
+    height: 80px;
+    width: 100%;
+}
 
-    }
-    #email{
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 5px;
-    }
-    #resultat{
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
-    #resultatemail{
-        visibility: hidden;
-        width: 0px;
-        height: 0px;
-    }
-    #passwd{
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 5px;
-    }
-    #confpasswd{
-        border: 1px solid black;
-        background-color: white;
-        border-radius: 5px;
-    }
+#menu1{
+    position: absolute;
+}
 
-    #imge{
-        margin-top: 4px;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        vertical-align: central;
-    }
-    #imgu{
-        margin-top: 4px;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        vertical-align: central;
-    }
-    #imgcp{
-        margin-top: 4px;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        vertical-align: central;
-    }
-    #imgp{
-        margin-top: 4px;
-        position: absolute;
-        width: 15px;
-        height: 15px;
-        vertical-align: central;
-    }
-    #info2{
-        margin-left: 17px;
-    }
-    #info{
-        margin-left: 17px;
-    }
-    #mdpinfo{
-        margin-left: 17px;
-    }
-    #mdperror{
-        margin-left: 17px;
-    }
-    #submit{
+#menu2{
+    margin-left: 10%;
+    margin-top: 30px;
+    position: absolute;
+}
 
-    }
+#menu3{
+    margin-left: 63%;
+    margin-top: 30px;
+    position: absolute;
+}
 
-    #image{
-        overflow: auto;
-        border: 1px solid black;
-        width: 60%;
-        height: 30%;
-    }
+
+#user{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+#email{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#resultat{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+#resultatemail{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+#passwd{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#confpasswd{
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#imge{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+
+#imgu{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+
+#imgcp{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+
+#imgp{
+    margin-top: 4px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    vertical-align: central;
+}
+
+#info2{
+    margin-left: 17px;
+}
+
+#info{
+    margin-left: 17px;
+}
+
+#mdpinfo{
+    margin-left: 17px;
+}
+
+#mdperror{
+    margin-left: 17px;
+}
+
+#submit{
+
+}
+
+#image{
+    overflow: auto;
+    border: 1px solid black;
+    width: 61%;
+    height: 30%;
+}
+
 #img {
     height: 60px;
     margin-bottom: 14px;
     margin-top: 5px;
     width: 60px;
 }
+
 #radio {
     margin-left: -37px;
     margin-right: 30px;
     margin-top: 42px;
     position: relative;
+}
+#profil-form{
+    
 }

@@ -1,18 +1,47 @@
 <?php
+session_start();
+    if(isset($_SESSION['user'])){
+?>
+<html>
+    <head>
+        <title>bienvenue <?php print $_SESSION['user'];?></title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+         <link href="css/images/favicon.ico" rel="icon" type="image/x-icon" />
+    </head>
+    <body>
+
+ 
+        <div id="menu">
+        <div id="menu1">
+        <img src="<?php print$_SESSION['pictures'];?>" /> <br />
+        <?php print $_SESSION['user'];?>
+        </div>
+        
+        <div id="menu2">
+        <a href="session.php"> Accueille </a>
+        </div>
+        <div id="menu3">
+        <a href="exit.php">deconnexion</a>
+        </div>
+        </div>
+
+
+<?php
+$pseudo = $_SESSION['user'];
+
 //repertoire ou l'image serra enregistrer
 $dossier = "images/";
 //ici je fais comprandre que c'est un directory pour la boucle while
 $d = dir($dossier);
 //nom de l'image
 $fichier = basename($_FILES['image']['name']);
-$pseudo = $_POST['pseudo'];
 
 //je fixe une taille limite pour les images
 $taille_maxi = 2097152;
 
 //je fixe une résoution limite pour l'images
-$max_widht = 100;
-$max_height = 100;
+$max_widht = 62;
+$max_height = 62;
 
 //je regarde la taille de l'image
 $taille = filesize($_FILES['image']['tmp_name']);
@@ -100,11 +129,13 @@ else{
     if(move_uploaded_file($_FILES['image']['tmp_name'],$dossier.$pseudo."/". $fichiers))
 	{
 		echo 'Envoye effectu&eacute; avec succ&egrave;s !';
+                
 	}
         //sinon (la fonction renvois une erreur)
 	else
 	{
 		echo 'Echec de l\'envoye de l\'image.';
+                echo '<br />';
 	}
 }
 }
@@ -113,3 +144,19 @@ else{
     echo $erreur;
 }
 ?>
+        <br />
+        <a href="javascript:window.history.go(-1)">Retour &agrave; la page d'upload d&apos;images</a>
+        <br />
+        ou
+        <br />
+        <a href="javascript:window.history.go(-2)">Retour &agrave; la page de profile</a>
+<?php
+
+    }
+        else{
+        header('location: index.php');
+    }
+
+?>
+    </body>
+</html>

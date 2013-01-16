@@ -50,6 +50,7 @@ mysql_query($add) or die(mysql_errno());
 if(true){
     session_start();
     $_SESSION['user']=$user;
+    $_SESSION['pictures']=$duser.'/'.$numimg.'.png';
     header('location: session.php');
 }
 else{

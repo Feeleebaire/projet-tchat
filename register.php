@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>S'enregistrer</title>
+         <link href="css/images/favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script src="js/register.js" type="text/javascript"></script>
     </head>

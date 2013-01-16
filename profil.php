@@ -11,15 +11,15 @@
         $d = dir($dossier);
         $du = dir($dossier_user);
         //je regarde dans le dossier images
+        $exist_dossier = "no";
         while($entry = $d->read()) {
             //si il existe un dossier ayant le meme nom que le pseudo
             if($entry == $user){
                 //je retourne la valeur yes pour dire que le dossier existe
                 $exist_dossier = "yes";
+                break;
             }
-            else{
-                $exist_dossier = "no";
-            }
+            
         }
         //je referme le dossier
         $d->close();
@@ -28,10 +28,24 @@
 <html>
     <head>
         <title>Votres profil <?php print $user;?></title>
+         <link href="css/images/favicon.ico" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" media="screen" href="css/style.css" type="text/css" />
         <script src="js/profil.js" type="text/javascript"></script>
     </head>
     <body>
+        <div id="menu">
+        <div id="menu1">
+        <img src="<?php print$_SESSION['pictures'];?>" /> <br />
+        <?php print $_SESSION['user'];?>
+        </div>
+        <div id="menu2">
+        <a href="session.php"> Accueille </a>
+        </div>
+        <div id="menu3">
+        <a href="exit.php">deconnexion</a>
+        </div>
+        </div>
+        <div id="profil-form">
         <form method="POST" action="profil-update.php" name="form" id="form" onsubmit="return testForm(form)">
         Pseudo actuelle: <?php echo $user?><br />
         entrer un nouveau pseudo: <br />
@@ -48,9 +62,10 @@
             if($exist_dossier == "yes"){
                 while ($entry = $du->read()){ 
                     if( $entry != '.' && $entry != '..' && preg_match('#\.(jpe?g|gif|png|bmp)$#i', $entry)) {
-                        
+                        echo "<label>";
                         echo "<img id=\"img\" src=".$du->path.'/'.$entry." />";
-                        echo "<input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." />"; 
+                        echo "<input id=\"radio\" type=\"radio\" name=\"img\" value=".$entry." />";
+                        echo "</label>";
                     }
                 }
             }
@@ -63,12 +78,14 @@
             ?>
 
         </div>
+        Ajouter une nouvelle image <a href="img-profil.php">cliquer ici</a><br />
         mot de passe:<br />
         <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
         confimer le mots de passe:<br />
         <input type="password" value="" name="confpasswd" id="confpasswd"/><label id="imgcp"></label><label id="mdperror"></label><br />
         <input type="submit" value="modiffier" />
         </form>
+        </div>
         <script type="text/javascript" src="js/JQuery.js"></script>
         <script type="text/javascript" src="js/live_profil.js"></script>
       <?php }

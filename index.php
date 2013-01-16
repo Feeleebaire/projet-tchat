@@ -2,6 +2,7 @@
     <head>
         <title>Page de connexion</title>
         <link rel="stylesheet" media="screen" href="css/style.css" type="text/css" />
+         <link href="css/images/favicon.ico" rel="icon" type="image/x-icon" />
     <body>
         <form name="form" method="POST" action="connect.php">
         <h1>Connexion</h1>

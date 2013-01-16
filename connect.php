@@ -15,6 +15,7 @@ if($r['passwd']==  sha1($password) && $r['user']==$user){
     session_start();
     $_SESSION['user']=$user;
     $_SESSION['pictures']=$r['pictures'];
+    $_SESSION['id']=$r['id'];
     header('location: session.php');
 }
  else {

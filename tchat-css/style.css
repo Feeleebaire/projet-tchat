@@ -1,0 +1,77 @@
+html{
+    position: absolute;
+    width: 695px;
+    height: 590px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: whitesmoke;
+   -moz-box-shadow: 4px 4px 10px black; 
+    -webkit-box-shadow: 4px 4px 10px black;  
+    box-shadow:4px 4px 10px black;
+
+}
+
+#conteneur {
+    margin-top: -10px;
+    height: 400px;
+}
+
+#conteneur a {
+    text-decoration: none;
+}
+
+#textarea{
+    background: #e7dbc5;
+    border: solid 1px #e1d0b0;
+    display: block;
+    resize: none;
+}
+
+#tchat{
+    height: 95%;
+    width:83%;
+    overflow: auto;
+    font-size:12px;
+    border: 1px solid grey;
+    background-color: white;
+    font-family: arial,helvetica,sans-serif;
+}
+
+#tchat img{
+    border:0px;
+    width: 10%;
+    height: 10%;
+    
+}
+
+#submit{
+    position:absolute;
+    top:40%;
+    right:6%;
+}
+
+#connected {
+    font-family: arial,helvetica,sans-serif;
+    background-color:white;
+    border: 1px solid grey;
+    color: green;
+    font-size: 12px;
+    height: 64%;
+    margin-left: 83%;
+    overflow: auto;
+    position: absolute;
+    width: 14%;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
+    -webkit-touch-callout: none;
+    text-align: center;
+}
+
+h1{
+    font-size: 16px;
+}
+
+hr{
+    border-bottom: 1px solid green;
+}
