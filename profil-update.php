@@ -5,10 +5,14 @@
         $email = $_POST['email'];
         $picture = $_POST['img'];
         $passwd = $_POST['passwd'];
+        $Limit = $_POST['limit'];
 
         
+        
+        
         $_SESSION['user'] = $user;
-        $_SESSION[''];
+        $_SESSION['pictures'] = $picture;
+        $_SESSION['limit'] = $Limit;
     ?>
 <html>
     <head>

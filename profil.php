@@ -3,7 +3,9 @@
     if(isset($_SESSION['user'])){
         include 'config.php';
         $user = $_SESSION['user'];
-        $sql = "SELECT user, email FROM users WHERE user ='$user'" ;
+        $sql = "SELECT * FROM users WHERE user ='$user'" ;
+        $res =mysql_query($sql) or die(mysql_errno());
+        $r=  mysql_fetch_array($res);
         //repertoire ou l'image serra enregistrer
         $dossier = "images/";
         $dossier_user = "images/".$user;
@@ -79,6 +81,13 @@
 
         </div>
         Ajouter une nouvelle image <a href="img-profil.php">cliquer ici</a><br />
+        historique des message<br />
+        
+        <select name="Select">
+            <?php
+                
+            ?>
+        </select><br />
         mot de passe:<br />
         <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
         confimer le mots de passe:<br />
