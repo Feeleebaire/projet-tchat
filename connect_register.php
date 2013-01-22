@@ -45,7 +45,7 @@ $f = fopen($dossier.$user."/"."index.html",'w');
 fwrite($f, $txt);
 //et je le referme
 fclose($f);
-$add="INSERT INTO users (`id`,`user`,`email`,`passwd`,`pictures`) VALUES (NULL,'$user','$email','$passhash','$duser/$numimg.png')";
+$add="INSERT INTO users (`id`,`user`,`email`,`passwd`,`pictures`,`limit`) VALUES (NULL,'$user','$email','$passhash','$duser/$numimg.png',15)";
 mysql_query($add) or die(mysql_errno());
 if(true){
     session_start();
