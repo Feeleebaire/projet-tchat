@@ -8,9 +8,9 @@
         <h1>Connexion</h1>
         Nom d&apos;utilisateur ou adresse email : <br />
         <input type="text" value="" id="user" name="login"/><br />
-        Mots de passe : <br />
+        Mot de passe : <br />
         <input type="password" value="" id="passwd" name="passwd" /><br />
-        <input type="submit" value="connection" />
+        <input type="submit" value="connexion" />
         </form>
         pas encore inscrit? : <a href="register.php"> s&apos;enregistrer</a>
     </body>

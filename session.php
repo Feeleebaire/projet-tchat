@@ -18,10 +18,10 @@
         <?php print $_SESSION['user'];?>
         </div>
         <div id="menu2">
-        <a href="profil.php"> Votres profil </a>
+        <a href="profil.php"> Votre profil </a>
         </div>
         <div id="menu3">
-        <a href="exit.php">deconnexion</a>
+        <a href="exit.php">d&eacute;connexion</a>
         </div>
         </div>
         <div>

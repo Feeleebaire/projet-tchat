@@ -15,7 +15,7 @@
             <div id="resultatemail"></div>
             mot de passe:<br />
             <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
-            confimer le mots de passe:<br />
+            confimer le mot de passe:<br />
             <input type="password" value="" name="confpasswd" id="confpasswd"/><label id="imgcp"></label><label id="mdperror"></label><br />
             <input type="submit" value="Enregistrer" id="submit" disabled="true" />
         </form>

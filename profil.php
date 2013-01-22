@@ -44,16 +44,16 @@
         <a href="session.php"> Accueille </a>
         </div>
         <div id="menu3">
-        <a href="exit.php">deconnexion</a>
+        <a href="exit.php">d&eacute;connexion</a>
         </div>
         </div>
         <div id="profil-form">
         <form method="POST" action="profil-update.php" name="form" id="form" onsubmit="return testForm(form)">
-        Pseudo actuelle: <?php echo $user?><br />
+        Pseudo actuel: <?php echo $user?><br />
         entrer un nouveau pseudo: <br />
         <input type="text" name="user" id="user" /><label id="imgu"></label><label id="info"></label>
         <div id="resultat"></div>
-        votre e-mail actuelle: <?php ?><br />
+        votre e-mail actuel: <?php ?><br />
         entrer un nouvelle e-mail:<br />
         <input type="text" value="" name="email" id="email" /><label id="imge"></label><label id="info2"></label>
         <div id="resultatemail"></div>
@@ -81,7 +81,7 @@
 
         </div>
         Ajouter une nouvelle image <a href="img-profil.php">cliquer ici</a><br />
-        historique des message<br />
+        historique des messages<br />
         
         <select name="Select">
             <?php
@@ -90,9 +90,9 @@
         </select><br />
         mot de passe:<br />
         <input type="password" value="" name="passwd" id="passwd" /><label id="imgp"></label><label id="mdpinfo"></label><br />
-        confimer le mots de passe:<br />
+        confimer le mot de passe:<br />
         <input type="password" value="" name="confpasswd" id="confpasswd"/><label id="imgcp"></label><label id="mdperror"></label><br />
-        <input type="submit" value="modiffier" />
+        <input type="submit" value="modifier" />
         </form>
         </div>
         <script type="text/javascript" src="js/JQuery.js"></script>
