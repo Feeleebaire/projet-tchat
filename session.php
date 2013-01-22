@@ -28,7 +28,6 @@
             <form method="POST" action="room.php">
                 <input type="hidden" value="test_beta_fr" />
             <input type="submit" value="tchater" />
-                
             </form>
             <?php /*
                 foreach(){

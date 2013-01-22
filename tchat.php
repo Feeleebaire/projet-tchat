@@ -5,6 +5,7 @@
         $table = "beta_test_fr";
         $pseudo = $_SESSION['user'];
         $image = $_SESSION['pictures'];
+        $Limit = $_SESSION['limit'];
         /*$table = $_POST['room'];*/
     ?>
 <!DOCTYPE html PUBIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -46,7 +47,7 @@
             <div id="tchat" onload = "ScrollWin;">
                 
                 <?php
-                    $sql= 'SELECT * FROM '.$table.' ORDER BY date DESC  LIMIT 15';
+                    $sql= 'SELECT * FROM '.$table.' ORDER BY date DESC  LIMIT '.$Limit;
                     $req = mysql_query($sql) or die(mysql_error());
                     $d = array();
                    
